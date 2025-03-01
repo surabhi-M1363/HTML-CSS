@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        .animated-button {
+            background: grey;
+            color: black;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s ease-in-out;
+        }
+        
+        .animated-button:hover {
+            background: red;
+            transform: scale(1.1);
+        }
+        
+        .animated-button:active {
+            background: #cc3700;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="animated-button">Come Near me and See the Magic</button>
+
+</body>
+
+</html>
